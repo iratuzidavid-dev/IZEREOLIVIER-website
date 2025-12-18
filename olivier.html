@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="assets/images/logo1.jpg">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IZERE OLIVIER</title>
+  <meta name="description" content="Personal portfolio: skills, daily ideas, chat with followers, wishes and prayer sessions." />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a2d9d3e4c6.js" crossorigin="anonymous"></script>
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#6ee7b7; --accent-2:#60a5fa;
+      --glass: rgba(255,255,255,0.04);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071224 0%, #071a2a 100%);color:#e6eef6;min-height:100vh}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;background:transparent}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:48px;height:48px;background:var(--accent);border-radius:10px;display:grid;place-items:center;color:#042024;font-weight:700}
+    nav a{color:var(--muted);text-decoration:none;margin:0 8px;padding:8px;border-radius:8px}
+    nav a.active{color:var(--accent)}
+    main{max-width:1100px;margin:28px auto;padding:20px}
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:20px;align-items:center}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:18px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    .hero-left h1{margin:0 0 8px 0;font-size:28px}
+    .muted{color:var(--muted)}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .skill{background:var(--glass);padding:8px 10px;border-radius:999px;color:var(--accent)}
+    .profile{display:flex;flex-direction:column;gap:12px;align-items:center;text-align:center}
+    .avatar{width:160px;height:160px;border-radius:14px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;font-size:36px}
+    /* pages */
+    .pages{margin-top:20px;display:grid;grid-template-columns:1fr;gap:18px}
+    .list{display:flex;flex-direction:column;gap:10px}
+    .post{background:rgba(255,255,255,0.02);padding:12px;border-radius:10px}
+    .form-row{display:flex;gap:8px}
+    .form-row input, .form-row textarea{flex:1;padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    textarea{min-height:100px}
+    footer{max-width:1100px;margin:28px auto;color:var(--muted);padding:10px}
+    .socials a{margin-right:10px;color:var(--muted);text-decoration:none}
+    /* responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .avatar{width:120px;height:120px}
+    }
+    /* CTA */
+    .btn{background:linear-gradient(90deg,var(--accent),var(--accent-2));padding:10px 14px;border-radius:10px;color:#042024;font-weight:600;border:none;cursor:pointer}
+    .small{padding:8px 10px;font-size:14px}
+    .note{font-size:13px;color:var(--muted)}
+    /* Chat box */
+    .chat-window{display:flex;flex-direction:column;height:420px}
+    .messages{flex:1;overflow:auto;padding:10px;display:flex;flex-direction:column;gap:8px}
+    .msg{max-width:75%;padding:8px 10px;border-radius:10px;background:rgba(255,255,255,0.03)}
+    .msg.me{align-self:flex-end;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#022}
+  </style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <a href="index.html" class="logo">
+        <img src="assets/images/logo1.jpg" alt="My Logo" style="height:50px;">
+    </a>
+    
+    <div>
+      <div style="font-weight:700">IZERE OLIVIER</div>
+      <div class="note">Developer • Designer • Creator</div>
+    </div>
+  </div>
+  <nav id="nav">
+    <a href="#home" data-page="home" class="active">Home</a>
+    <a href="#skills" data-page="skills">Skills</a>
+    <a href="#ideas" data-page="ideas">Daily Ideas</a>
+    <a href="#chat" data-page="chat">Chat</a>
+    <a href="#wishes" data-page="wishes">Wishes</a>
+    <a href="#prayer" data-page="prayer">Prayer</a>
+  </nav>
+</header>
+<main>
+    <section id="home" class="page">
+        <div class="hero" style="padding:20px; max-width:1200px; margin:auto;">
+      
+          <!-- Introduction -->
+          <p>
+            Welcome to my professional portfolio. I am an adaptable and highly versatile individual whose experience spans across technology, education, practical problem-solving, and creative development. Over the years, I have cultivated a broad skill set that allows me to address diverse challenges in innovative ways. My journey has been defined by a deep commitment to learning, hands-on experience, and a desire to share knowledge, which has enabled me to excel in multiple areas simultaneously. From repairing and optimizing devices to teaching students and beginners how to develop applications and websites, my work revolves around solving problems, empowering others, and creating value.
+          </p>
+      
+          <!-- Image placeholder for Introduction / Yourself -->
+          <div style="text-align:center; margin-top:10px;">
+            <img src="assets/images/personal.jpg" alt="Introduction / Myself" style="max-width:100%; height:auto; border-radius:10px;">
+          </div>
+      
+          <p>
+            One of the pillars of my expertise lies in **software installation and technical support**. In an era where technology drives nearly every aspect of daily life, ensuring devices are optimized and running smoothly is crucial. I have hands-on experience installing operating systems, essential productivity programs, security software, drivers, and specialized applications tailored to individual needs. I approach each installation with precision, taking care to configure settings, optimize performance, and troubleshoot any issues that may arise. This attention to detail guarantees that the end user experiences minimal disruptions and maximum efficiency.
+          </p>
+      
+          <!-- Image placeholder for Software Installation -->
+          <div style="text-align:center; margin-top:10px;">
+            <img src="assets/images/software.jpg" alt="Software Installation" style="max-width:100%; height:auto; border-radius:10px;">
+          </div>
+      
+          <p>
+            Beyond installing software, I excel in **device repair for both phones and computers**. This includes diagnosing and resolving hardware and software problems, replacing malfunctioning components, repairing damaged screens, and troubleshooting system errors. My approach is methodical: I first identify the root cause of the problem, then implement an effective solution that ensures long-term reliability. By combining technical knowledge with careful attention to detail, I can restore devices to full functionality, helping users regain confidence in their technology and maintain productivity without unnecessary interruptions.
+          </p>
+      
+          <!-- Image placeholder for Device Repair -->
+          <div style="text-align:center; margin-top:10px;">
+            <img src="assets/images/device repair.jpg" alt="Device Repair" style="max-width:100%; height:auto; border-radius:10px;">
+          </div>
+      
+          <p>
+            Complementing my technical skills, I bring a passion for **teaching and mentorship**. I guide students, beginners, and enthusiasts through learning processes that empower them to understand and apply practical skills. From teaching the fundamentals of Android app development to guiding learners through building professional-quality websites, I provide step-by-step instructions that simplify complex concepts. My teaching style is hands-on, focused on practical outcomes, and tailored to each learner's pace and understanding. By fostering an environment of encouragement and curiosity, I help others gain confidence, develop critical thinking, and achieve measurable results.
+          </p>
+      
+          <!-- Image placeholder for Teaching -->
+          <div style="text-align:center; margin-top:10px;">
+            <img src="assets/images/teaching.jpg" alt="Teaching & Mentorship" style="max-width:100%; height:auto; border-radius:10px;">
+          </div>
+      
+          <p>
+            In addition to technology and education, I have substantial expertise in **modern farming techniques and agricultural practices**. I teach individuals how to prepare soil, select crops, implement effective irrigation methods, and manage plants to maximize productivity and sustainability. I emphasize practical, results-oriented guidance that allows learners to implement techniques immediately and observe tangible improvements. By integrating technology, innovation, and traditional agricultural knowledge, I help individuals increase yields, reduce waste, and adopt sustainable practices that ensure long-term success in farming.
+          </p>
+      
+          <!-- Image placeholder for Farming -->
+          <div style="text-align:center; margin-top:10px;">
+            <img src="assets/images/farming.jpg" alt="Farming & Agriculture" style="max-width:100%; height:auto; border-radius:10px;">
+          </div>
+      
+          <p>
+            Another key area of my professional skill set is **driving and transportation management**. I hold a Category B driving license and am proficient in navigating safely and efficiently in a variety of environments. This skill complements my other abilities, allowing me to manage mobility and logistics for personal and professional purposes. Whether it’s transporting materials, commuting for work, or assisting others, my driving skills ensure reliability, safety, and timeliness. Combining technical expertise with mobility skills allows me to approach projects holistically and provide comprehensive solutions.
+          </p>
+      
+          <!-- Image placeholder for Driving -->
+          <div style="text-align:center; margin-top:10px;">
+            <img src="assets/images/driving.jpg" alt="Driving" style="max-width:100%; height:auto; border-radius:10px;">
+          </div>
+      
+          <p>
+            I am also experienced in **Android application and website development**, helping beginners and clients turn their ideas into functional, professional, and visually appealing digital products. I guide learners through the entire process, from conceptualizing app functionality and user experience to building and testing final applications and websites. I focus on usability, responsiveness, and interactive design, ensuring that digital solutions meet modern standards and user expectations. My approach emphasizes practical skill-building, empowering learners to continue developing their own apps and websites independently.
+          </p>
+      
+          <!-- Image placeholder for Android Apps & Website Creation -->
+          <div style="text-align:center; margin-top:10px;">
+            <img src="assets/images/android.jpg" alt="Android Apps & Website Creation" style="max-width:100%; height:auto; border-radius:10px;">
+          </div>
+      
+          <p>
+            One of the most important aspects of my professional identity is the combination of **technical expertise, teaching ability, and practical problem-solving**. I thrive in dynamic environments where challenges require both creativity and hands-on skills. Whether I am diagnosing complex technical issues, guiding learners through educational projects, managing logistics, or teaching agricultural techniques, I approach every task with dedication, careful planning, and a desire to achieve tangible results. This multi-faceted skill set allows me to provide comprehensive solutions, empower others, and make a meaningful impact in every project I undertake.
+          </p>
+      
+          <!-- Image placeholder for Multiple Skills / Yourself -->
+          <div style="text-align:center; margin-top:10px;">
+            <img src="assets/images/skills.png" alt="All Skills Summary" style="max-width:100%; height:auto; border-radius:10px;">
+          </div>
+      
+          <p>
+            Over time, I have continually expanded my knowledge and skill set, staying up-to-date with the latest technological advancements, educational methods, and practical techniques in agriculture and other fields. This dedication to lifelong learning enables me to adapt quickly, tackle new challenges, and provide innovative solutions. My ultimate goal is to combine all these abilities to create real value for clients, students, and communities by delivering services, guidance, and mentorship that are practical, effective, and transformative.
+          </p>
+      
+          <!-- Optional Image placeholder for Lifelong Learning / Personal Growth -->
+          <div style="text-align:center; margin-top:10px;">
+            <img src="assets/images/life.jpg" alt="Lifelong Learning" style="max-width:100%; height:auto; border-radius:10px;">
+          </div>
+      
+          <p>
+            In conclusion, my professional journey encompasses a wide array of skills that intersect technology, education, agriculture, and personal development. From repairing devices and installing software to teaching complex concepts, guiding learners in creating digital applications, mentoring in agricultural practices, and providing safe driving services, I approach every task with integrity, diligence, and a commitment to excellence. This portfolio serves as a reflection of my capabilities, a record of my experience, and an invitation for collaboration, mentorship, and meaningful engagement with those who seek to learn, grow, and create impactful solutions.
+          </p>
+      
+          <!-- Optional Final Image placeholder -->
+          <div style="text-align:center; margin-top:10px;">
+            <img src="assets/images/personal.jpg" alt="Portfolio Summary" style="max-width:100%; height:auto; border-radius:10px;">
+          </div>
+      
+        </div>
+      </section>
+      
+        <p style="margin-top:12px">
+          <a href="assets/files/Izere_Olivier_CV.pdf" download class="btn">
+            Download CV
+        </a>
+        </p>
+        <div style="margin-top:12px" class="note">You can download my cv on above button.</div>
+      </div>
+      <div class="card profile">
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo1.jpg" alt="My Logo" style="height:50px;">
+        </a>
+        
+        <div style="font-weight:700">IZERE OLIVIER</div>
+        <div class="muted">Available for hire — open to remote & contract roles</div>
+        <div style="display:flex;gap:8px;margin-top:12px">
+            <a class="btn small" href="mailto:izereolivier14@gmai.com">Find Me on Email</a>
+            <a class="btn small" href="https://wa.me/+250792449928" target="_blank">Find Me on WhatsApp</a>
+            
+          <a class="btn small" href="#ideas" onclick="goto('ideas')">Your Ideas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="page" style="display:none">
+    <div class="card">
+      <h2>Skills & Knowledge</h2>
+      <p class="muted">I am a versatile and highly capable individual with a broad range of practical skills and knowledge. I specialize in repairing phones and computers, troubleshooting hardware and software issues, and installing programs and software to ensure devices run smoothly and efficiently. Beyond technology, I am a licensed driver (Category B) and comfortable managing transportation tasks. I am also passionate about teaching and sharing knowledge, whether it’s guiding students, training people in modern farming techniques, or helping beginners learn how to create Android apps and build websites. My combination of technical expertise, problem-solving abilities, and a strong desire to educate and assist others allows me to deliver practical solutions and real value in every task I take on. I thrive in dynamic environments where I can apply my hands-on skills, adapt quickly, and continually expand my knowledge to meet challenges head-on.</p>
+      <div class="list" id="skillList">
+        <div class="post"><strong>Frontend development</strong><div class="muted">I excel at creating intuitive, user-friendly, and visually appealing interfaces that make technology accessible to everyone. Whether it’s designing layouts, setting up interactive elements, or ensuring smooth functionality on computers and mobile devices, I bring a hands-on approach to every project. My experience with software installation, troubleshooting, and device repair allows me to understand how users interact with technology, enabling me to build interfaces that are both practical and engaging. I focus on creating experiences that are not only functional but also easy to navigate, ensuring that users can interact with apps, websites, and programs seamlessly. By combining technical know-how with creativity, I deliver frontend solutions that are efficient, reliable, and designed to provide real value to users.</div></div>
+        <div class="post"><strong>Backend</strong><div class="muted">I am passionate about sharing knowledge and helping others grow, whether through education, hands-on training, or mentorship. I teach students and beginners how to create Android apps and build websites, guiding them step by step to gain real-world skills. I also provide practical training in modern farming techniques, helping individuals improve productivity and efficiency. Coupled with my technical expertise in phone and computer repair, software installation, and problem-solving, I bring a unique combination of skills that allows me to educate, inspire, and assist others in a variety of fields. My approach emphasizes clarity, practicality, and empowering others to confidently apply what they learn, making a tangible impact both in technology and everyday life.</div></div>
+      </div>
+      <div style="margin-top:12px">
+        <div class="note">Edit this page content in the code or use the small admin controls at the bottom (for demo only).</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ideas" class="page" style="display:none">
+    <div class="card">
+      <h2>Daily Ideas</h2>
+      <p class="muted">Share short ideas, experiments, links or notes. Posts are stored locally in the demo. To make this public or persistent across devices, connect to Firebase (instructions below).</p>
+      <div style="margin-top:12px" class="form-row">
+        <input id="ideaTitle" placeholder="Idea title..." />
+        <button class="btn" onclick="addIdea()">Share your Idea</button>
+      </div>
+      <textarea id="ideaBody" placeholder="Write your idea here..."></textarea>
+      <div id="ideasList" class="list" style="margin-top:12px"></div>
+    </div>
+  </section>
+
+  <section id="chat" class="page" style="display:none">
+    <div class="card">
+      <h2>Chat with followers</h2>
+      <p class="muted">This demo uses LocalStorage for chat. To enable real-time chat for all visitors, connect Firebase and paste your config in the script area (see instructions at the bottom of this page).</p>
+      <div class="chat-window">
+        <div id="messages" class="messages"></div>
+        <div style="display:flex;gap:8px;margin-top:8px">
+          <input id="chatName" placeholder="Your name" style="flex:0.8" />
+          <input id="chatInput" placeholder="Message..." style="flex:1" onkeydown="if(event.key==='Enter') sendChat()" />
+          <button class="btn small" onclick="sendChat()">Send</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="wishes" class="page" style="display:none">
+    <div class="card">
+      <h2>Wishes</h2>
+      <p class="muted">Write wishes and goals. Keep them private or share — up to you.</p>
+      <div class="form-row" style="margin-top:12px">
+        <input id="wishText" placeholder="Type a wish..." />
+        <button class="btn" onclick="addWish()">Add</button>
+      </div>
+      <div id="wishesList" class="list" style="margin-top:12px"></div>
+    </div>
+  </section>
+
+  <section id="prayer" class="page" style="display:none">
+    <div class="card">
+      <h2>Prayer Sessions</h2>
+      <p class="muted">Create prayer notes or sessions. You can add times and short descriptions.</p>
+      <div class="form-row" style="margin-top:12px">
+        <input id="prayerTitle" placeholder="Session title" />
+        <button class="btn" onclick="addPrayer()">Add</button>
+      </div>
+      <textarea id="prayerBody" placeholder="Write details..." style="margin-top:12px"></textarea>
+      <div id="prayerList" class="list" style="margin-top:12px"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="card" style="display:flex;justify-content:space-between;align-items:center">
+    <div>
+      <div style="font-weight:700">IZERE OLIVIER</div>
+      <div class="note">your real partern</div>
+    </div>
+    <div class="socials">
+      <a id="fbLink" href="https::facebook.com/izere_olivier" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+      <a id="igLink" href="https://instagram.com/izere_olivier" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+      <a id="waLink" href="https://instagram.com/+250792449928" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Simple single-file SPA navigation
+const pages = document.querySelectorAll('.page');
+const navLinks = document.querySelectorAll('nav a');
+function goto(page){
+  pages.forEach(p=>p.style.display='none');
+  document.getElementById(page).style.display='block';
+  navLinks.forEach(a=>a.classList.remove('active'));
+  document.querySelectorAll('nav a[data-page="'+page+'"]')[0].classList.add('active');
+}
+navLinks.forEach(a=>a.addEventListener('click',e=>{e.preventDefault();goto(a.dataset.page)}));
+// default
+if(location.hash){const h = location.hash.replace('#',''); if(document.getElementById(h)) goto(h);} else goto('home');
+
+// ----- LocalStorage backed Ideas -----
+function loadIdeas(){
+  const all = JSON.parse(localStorage.getItem('ideas.v1')||'[]');
+  const wrap = document.getElementById('ideasList'); wrap.innerHTML='';
+  all.reverse().forEach(it=>{
+    const el = document.createElement('div'); el.className='post';
+    el.innerHTML = `<strong>${escapeHtml(it.t)}</strong><div class="muted">${new Date(it.ts).toLocaleString()}</div><div style="margin-top:8px">${escapeHtml(it.b)}</div>`;
+    wrap.appendChild(el);
+  });
+}
+function addIdea(){
+  const t = document.getElementById('ideaTitle').value.trim();
+  const b = document.getElementById('ideaBody').value.trim();
+  if(!t && !b) return alert('Write something first');
+  const arr = JSON.parse(localStorage.getItem('ideas.v1')||'[]');
+  arr.push({t:b?t: new Date().toLocaleString(), b:b, ts:Date.now()});
+  localStorage.setItem('ideas.v1', JSON.stringify(arr));
+  document.getElementById('ideaTitle').value=''; document.getElementById('ideaBody').value='';
+  loadIdeas();
+}
+loadIdeas();
+
+// ----- Simple Chat (local demo) -----
+function loadChat(){
+  const msgs = JSON.parse(localStorage.getItem('chat.v1')||'[]');
+  const wrap = document.getElementById('messages'); wrap.innerHTML='';
+  msgs.forEach(m=>{
+    const d = document.createElement('div'); d.className='msg '+(m.me? 'me':'');
+    d.innerHTML = `<div style="font-size:13px;font-weight:600">${escapeHtml(m.n)}</div><div style="margin-top:6px">${escapeHtml(m.t)}</div><div class="muted" style="font-size:11px;margin-top:6px">${new Date(m.ts).toLocaleTimeString()}</div>`;
+    wrap.appendChild(d);
+  });
+  wrap.scrollTop = wrap.scrollHeight;
+}
+function sendChat(){
+  const name = (document.getElementById('chatName').value||'Guest').trim();
+  const text = document.getElementById('chatInput').value.trim();
+  if(!text) return;
+  const arr = JSON.parse(localStorage.getItem('chat.v1')||'[]');
+  arr.push({n:name,t:text,ts:Date.now(),me:true});
+  localStorage.setItem('chat.v1', JSON.stringify(arr));
+  document.getElementById('chatInput').value=''; loadChat();
+}
+loadChat();
+
+// ----- Wishes -----
+function loadWishes(){
+  const arr = JSON.parse(localStorage.getItem('wishes.v1')||'[]');
+  const wrap = document.getElementById('wishesList'); wrap.innerHTML='';
+  arr.reverse().forEach((w,i)=>{
+    const d=document.createElement('div'); d.className='post'; d.innerHTML=`<div>${escapeHtml(w.t)}</div><div class="muted" style="font-size:12px;margin-top:6px">${new Date(w.ts).toLocaleString()}</div>`; wrap.appendChild(d);
+  });
+}
+function addWish(){
+  const t = document.getElementById('wishText').value.trim(); if(!t) return;
+  const arr = JSON.parse(localStorage.getItem('wishes.v1')||'[]'); arr.push({t:t,ts:Date.now()}); localStorage.setItem('wishes.v1',JSON.stringify(arr)); document.getElementById('wishText').value=''; loadWishes();
+}
+loadWishes();
+
+// ----- Prayer -----
+function loadPrayer(){
+  const arr = JSON.parse(localStorage.getItem('prayer.v1')||'[]'); const wrap = document.getElementById('prayerList'); wrap.innerHTML=''; arr.reverse().forEach(p=>{const d=document.createElement('div');d.className='post';d.innerHTML=`<strong>${escapeHtml(p.t)}</strong><div class="muted">${new Date(p.ts).toLocaleString()}</div><div style="margin-top:8px">${escapeHtml(p.b)}</div>`;wrap.appendChild(d)});
+}
+function addPrayer(){
+  const t = document.getElementById('prayerTitle').value.trim(); const b = document.getElementById('prayerBody').value.trim(); if(!t && !b) return; const arr = JSON.parse(localStorage.getItem('prayer.v1')||'[]'); arr.push({t:t||'Prayer',b:b,ts:Date.now()}); localStorage.setItem('prayer.v1',JSON.stringify(arr)); document.getElementById('prayerTitle').value=''; document.getElementById('prayerBody').value=''; loadPrayer();
+}
+loadPrayer();
+
+// ----- Helpers -----
+function escapeHtml(s){ if(!s) return ''; return s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;'); }
+
+function downloadResume(){
+  const blob = new Blob([`IZERE OLIVIER\n\nSummary:\n- Put a short summary here\n\nSkills:\n- JavaScript\n- React\n- Node`],{type:'text/plain'});
+  const url = URL.createObjectURL(blob); const a=document.createElement('a'); a.href=url; a.download='Resume.txt'; a.click(); URL.revokeObjectURL(url);
+}
+function openContact(){
+  const msg = 'Email: izereolivier14@gmail.com\nPhone / WhatsApp: +250792449928';
+  alert('Contact info (edit in code):\n\n'+msg);
+}
+
+// ----- Social links placeholders (edit these) -----
+document.getElementById('fbLink').href = 'https://facebook.com/izere_olivier';
+document.getElementById('igLink').href = 'https://instagram.com/izere_olivier';
+document.getElementById('waLink').href = 'https://wa.me/+250792449928';
+
+// ----- Replacements you may want: change "Your Name" and avatar letters -----
+document.getElementById('displayName').innerText = '';
+document.getElementById('avatarText').innerText = 'IO';
+
+/*
+  OPTIONAL: Real-time sync using Firebase Realtime Database
+  1) Create a Firebase project at https://console.firebase.google.com
+  2) Enable Realtime Database and set rules to allow read/write while testing (secure later):
+     {
+       "rules": { ".read": true, ".write": true }
+     }
+  3) Copy your Firebase config and paste it below into `firebaseConfig` and uncomment the firebase script includes.
+  4) After that, replace loadChat/sendChat to push/pull from the database.
+*/
+
+</script>
+</body>
+</html>
